@@ -20,3 +20,5 @@ spring:
 #PRODUCT:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+label:
+  release
