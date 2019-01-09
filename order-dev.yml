@@ -3,8 +3,6 @@ eureka:
     service-url:
       defaultZone: http://192.168.0.103:8761/eureka/
 spring:
-  profiles:
-    active: dev
   application:
     name: order
   datasource:
@@ -20,3 +18,4 @@ spring:
 #PRODUCT:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+env: dev
