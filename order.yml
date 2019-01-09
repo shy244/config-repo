@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev11
+    active: dev
 # eureka:
 #   client:
 #     service-url:
