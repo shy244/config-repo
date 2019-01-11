@@ -15,7 +15,7 @@ spring:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
-  test445
+  test4
 girl:
-  name: ali
-  age: 22
+  name: lili
+  age: 19
