@@ -12,6 +12,9 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/SpringCloud_Sell?characterEncoding=utf-8&use=SSL=false
   jpa:
     show-sql: true
+  redis:
+    host: 192.168.65.128
+    port: 6379
 #server:
 #  port: 8087
 #设置调用哪个服务时Ribbon的IRule规则算法
