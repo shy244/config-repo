@@ -1,0 +1,16 @@
+zuul:
+  routes:
+  # /myProduct/product/list -> /product/product/list
+    aaa: #定义的规则的名字，名字可以随意写
+      path: /myProduct/**  #url地址
+      serviceId: product #要路由到的服务名字
+      #设置api-gateway不过滤掉cookie，即设置sensitiveHeaders:为空
+      sensitiveHeaders:
+  #简洁写法
+#    product: /myProduct/**
+  #排除某些路由即配置不允许外部访问的api
+  ignored-patterns:
+    - /**/product/listForOrder
+management:
+  security:
+    enabled: false
