@@ -1,4 +1,6 @@
 zuul:
+  #全部服务忽略敏感头（全部服务都可以传递cookie）
+  sensitive-headers: 
   routes:
   # /myProduct/product/list -> /product/product/list
     aaa: #定义的规则的名字，名字可以随意写
