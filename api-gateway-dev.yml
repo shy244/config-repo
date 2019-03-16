@@ -17,10 +17,14 @@ management:
   security:
     enabled: false
     
-hystrix: #zuul组件超时的配置(spring boot 、cloud 2.0.0.M3和Finchley.M2版本时的配置)
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 5000
+# hystrix: #zuul组件超时的配置(spring boot 、cloud 2.0.0.M3和Finchley.M2版本时的配置)
+#   command:
+#     default:
+#       execution:
+#         isolation:
+#           thread:
+#             timeoutInMilliseconds: 5000
+            
+ribbon: #zuul组件超时的配置(Finchley.RELEASE版本时的配置)
+  ReadTimeout: 5000
+  SocketTimeout: 5000
