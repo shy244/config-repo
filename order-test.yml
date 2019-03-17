@@ -47,7 +47,7 @@ feign: #feign超时的配置(Finchley.RELEASE版本时的配置)
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
-  test2
+  test3
 girl:
   name: lili
   age: 19
