@@ -16,6 +16,30 @@ spring:
     port: 5672
     username: guest
     password: guest
+#hystrix: #feign超时的配置(spring boot 、cloud 2.0.0.M3和Finchley.M2版本时的配置)
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 1000
+#    getProductInfo: #为HystrixController#getProductInfo方法单独配置
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 3000
+#feign: #feign组件里使用hystrix配置(spring boot 、cloud 2.0.0.M3和Finchley.M2版本时的配置)
+#  hystrix:
+#    enabled: true
+
+feign: #feign超时的配置(Finchley.RELEASE版本时的配置)
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+        
 #server:
 #  port: 8087
 #设置调用哪个服务时Ribbon的IRule规则算法
