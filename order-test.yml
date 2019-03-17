@@ -49,5 +49,5 @@ feign: #feign超时的配置(Finchley.RELEASE版本时的配置)
 env:
   test33
 girl:
-  name: lili
-  age: 19
+  name: meimei
+  age: 20
